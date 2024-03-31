@@ -10,12 +10,23 @@
 	<style>
 		body {
 			width: 50%;
+			background-color: black;
 		}
+		h1 {
+			margin: 1em 0em 1em 0em;
+		}
+		p {
+			color: white;
+		}
+		main {
+			margin: 5%;
+		}
+
 
 		.menu-link {
 			text-decoration: none;
-			background-color: var(--blue);
-			color: var(--green);
+			background-color: var(--green);
+			color: var(--blue);
 			padding: 0.8em;
 			border-radius: .5em;
 		}
@@ -35,22 +46,21 @@
 			width: 30%;
 			height: 100vh;
 			transition: left 0.3s ease;
-			/* Smooth transition for left property */
 
 			a {
 				text-decoration: none;
-
 			}
 
 			ul {
 				padding-top: 15%;
+				padding-left: 0%;
 			}
 
 			li {
-				color: var(--blue);
 				padding: .5em 0em .5em 0em;
 				font-weight: 800;
 				font-size: 1.25em;
+				padding-left: 5%;
 			}
 
 			svg {
@@ -60,17 +70,20 @@
 
 		}
 
-		li:hover {
-			background-color: var(--blue);
-			color: var(--green);
+
+		a:visited {
+			text-decoration: none;
 		}
 
-		a:focus {
+		li:hover, a:hover {
 			background-color: var(--blue);
-			/* Change to the desired background color */
+			color: var(--green) !important;
+		}
+
+		ul:focus {
+			background-color: var(--blue);
 			color: var(--green);
 			outline: none;
-			padding: 1em;
 		}
 
 		#nav:target {

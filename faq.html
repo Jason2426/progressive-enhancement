@@ -8,22 +8,28 @@
 		rel="stylesheet">
 	<link href="assets/styles.css" rel="stylesheet">
 	<style>
+
+		body {
+			background-color: black;
+			color: white;
+		}
 		/* Hint: Denk aan de states van het component; deze kan open en dicht zijn */
 		h1 {
-			color: black;
+			color: white
 		}
 
 		details {
-			border: solid 1px var(--blue);
+			border: solid 1px var(--green);
 			margin: 1em;
 			padding: 1em;
-			color: black;
+			color: white;
 			width: fit-content;
 			border-radius: .5em;
 		}
 
 		details[open] {
 			width: 50%;
+			color: black;
 		}
 
 		details:nth-child(2)[open] {
