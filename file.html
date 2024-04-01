@@ -22,7 +22,7 @@
 			flex-direction: column;
 		}
 
-		.custom-file-input {
+		.input-field {
 			width: 50%;
 			padding: 4em;
 			box-sizing: border-box;
@@ -35,9 +35,9 @@
 
 		/* file upload button */
 		input[type="file"]::file-selector-button {
-			display: none;
+			border: none;
+			background-color: inherit;
 		}
-
 
 		button {
 			font-weight: 700;
@@ -45,7 +45,6 @@
 			height: 4em;
 			margin: 2%;
 		}
-
 	</style>
 	<script type="module">
 		/* Schrijf hier eventueel je client-side JavaScript */
@@ -63,18 +62,12 @@
 
 	<form method="post">
 
-		<input type="file" id="file" name="file" accept="image/png, image/jpeg" class="custom-file-input"  onchange="previewImage(event)" />
+		<input type="file" id="file" name="file" accept="image/png, image/jpeg" class="input-field"/>
 		<!-- <img id="preview" class="preview" src="#" alt="Preview" /> -->
 		<button type="submit" class="fdnd-button" class="upload-button">Uploaden</button>
 
 	</form>
 
-	<!-- <details open>
-			<summary>Demo video</summary>
-			<video src="assets/file.mp4" width="1496" height="496" controls muted autoplay loop>
-				<a href="assets/file.mp4">assets/file.mp4</a>
-			</video>
-		</details> -->
 </body>
 
 </html>

@@ -12,16 +12,18 @@
 			width: 50%;
 			background-color: black;
 		}
+
 		h1 {
 			margin: 1em 0em 1em 0em;
 		}
+
 		p {
 			color: white;
 		}
+
 		main {
 			margin: 5%;
 		}
-
 
 		.menu-link {
 			text-decoration: none;
@@ -34,7 +36,7 @@
 		button:hover,
 		.menu-link:hover {
 			background-color: var(--purple);
-			transition: ease-in-out .25s;
+			transition: ease-in-out .35s;
 		}
 
 		#nav {
@@ -45,7 +47,7 @@
 			background-color: var(--green);
 			width: 30%;
 			height: 100vh;
-			transition: left 0.3s ease;
+		}
 
 			a {
 				text-decoration: none;
@@ -68,22 +70,20 @@
 				padding: 1.5em;
 			}
 
-		}
-
-
 		a:visited {
 			text-decoration: none;
 		}
 
-		li:hover, a:hover {
+		li:hover,
+		a:hover {
 			background-color: var(--blue);
 			color: var(--green) !important;
 		}
 
-		ul:focus {
-			background-color: var(--blue);
+		a:focus {
 			color: var(--green);
-			outline: none;
+			background-color: var(--blue);
+			justify-content: center;
 		}
 
 		#nav:target {
@@ -104,8 +104,9 @@
 		}
 
 		svg:focus {
-			border: solid .5px var(--blue);
+			border: solid .5px black;
 		}
+		
 	</style>
 	<script type="module">
 

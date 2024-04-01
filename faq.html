@@ -8,11 +8,11 @@
 		rel="stylesheet">
 	<link href="assets/styles.css" rel="stylesheet">
 	<style>
-
 		body {
 			background-color: black;
 			color: white;
 		}
+
 		/* Hint: Denk aan de states van het component; deze kan open en dicht zijn */
 		h1 {
 			color: white
@@ -32,22 +32,29 @@
 			color: black;
 		}
 
-		details:nth-child(2)[open] {
+		.first[open] {
 			background-color: var(--purple);
-			/* Change to desired color */
+		}
+
+		.second[open] {
+			background-color: var(--green);
+		}
+
+		.third[open] {
+			background-color: var(--yellow);
+		}
+
+		/* details:nth-child(2)[open] {
+			background-color: var(--green);
 		}
 
 		details:nth-child(3)[open] {
 			background-color: var(--green);
-			/* Change to desired color */
 		}
 
 		details:nth-child(4)[open] {
 			background-color: var(--yellow);
-			/* Change to desired color */
-		}
-
-
+		} */
 	</style>
 </head>
 
@@ -55,7 +62,7 @@
 	<h1>Veelgestelde vragen</h1>
 
 
-	<details open>
+	<details open class="first">
 		<summary>Wat is frontend development?</summary>
 		<p>
 			Een frontend developer ontwerpt en bouwt websites in HTML, CSS en JavaScript. Deze frontend talen leer je
@@ -64,7 +71,7 @@
 		</p>
 	</details>
 
-	<details closed>
+	<details closed class="second">
 		<summary>Moet ik al kunnen coderen?</summary>
 		<p>
 			Nee, je hebt helemaal geen voorkennis nodig om te beginnen aan deze opleiding, we kunnen je alles leren! Als
@@ -75,7 +82,7 @@
 		</p>
 	</details>
 
-	<details closed>
+	<details closed class="third">
 		<summary>Wat is een Associate Degree?</summary>
 		<p>
 			Een Associate degree-opleiding is een tweejarige hbo-opleiding op niveau 5. Een Ad slaat een brug tussen het
