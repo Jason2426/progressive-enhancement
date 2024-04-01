@@ -83,7 +83,7 @@ Maak minimaal 3 van onderstaande user interface componenten:
 
 Deze opdracht is done als:
 
-- [ ] Je hebt minstens drie interactie componenten uitgewerkt en gedocumenteerd
-- [ ] De breakdownschetsen zijn opgenomen in je wiki
-- [ ] Bij elke schets staat een korte uitleg van de code
-- [ ] Je werk is te bekijken via GitHub Pages
+- [x] Je hebt minstens drie interactie componenten uitgewerkt en gedocumenteerd
+- [x] De breakdownschetsen zijn opgenomen in je wiki
+- [x] Bij elke schets staat een korte uitleg van de code
+- [x] Je werk is te bekijken via GitHub Pages
